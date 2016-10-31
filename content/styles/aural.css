@@ -1,0 +1,173 @@
+@font-face {
+
+	font-family: Lobster;
+	src: url(../fonts/Lobster-Regular.ttf);
+
+}
+
+@font-face {
+
+	font-family: Dancing Script OT;
+	src: url(../fonts/DancingScript-Regular.ttf);
+
+}
+
+body {
+
+  background-color: #07002d;
+  
+}
+
+main {
+
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  text-align: center;
+
+}
+
+main:before {
+
+  height: 100%;
+
+  content: " ";
+  vertical-align: middle;
+
+  display: inline-block;
+
+}
+
+.centered {
+
+  position: relative;
+
+  vertical-align: middle;
+  
+  display: inline-block;
+
+}
+
+.ggg {
+
+    font-size: 16px;
+
+    text-shadow: -1px -1px 1px #fff, 1px 1px 1px #000;
+
+    background: url(../imgs/white-wood.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    box-shadow: 30px 20px 20px #888888;
+    border: 10px solid #374c60;
+    border-radius: 20px;
+
+}
+
+table {
+	
+    height: 440px;
+    text-align: left;
+    padding: 25px 193px 31px 26px;
+    letter-spacing: 1px;
+
+}
+
+caption {
+
+	color:  #00366a;
+	font-size: 73px;
+	font-family: Dancing Script OT;
+
+}
+
+tbody:nth-of-type(1) tr:nth-of-type(7):after {
+
+  position: absolute;
+
+  content: url(../imgs/9999.png);
+
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  transform: rotateZ(10deg);
+  transition: transform 2s;
+
+  animation-name: pip;
+  animation-direction: alternate;
+  animation-duration: 3s;
+
+}
+
+tbody:nth-of-type(1) tr:nth-of-type(7):hover:after {
+
+  transform: rotateZ(360deg);
+  transition: transform 2s;
+
+}
+
+tbody:nth-of-type(1) th:nth-of-type(1):before {
+
+  counter-increment: section;
+  content: counter(section) ".";
+  float: left;
+
+  display: block;
+   
+  padding-left: 40px;
+  padding-right: 15px;
+
+}
+
+th {
+
+	color:  #00366a;
+ 	font-family: Lobster;
+
+}
+
+td {
+
+  color: #38569a;
+  font-family: Lobster;
+
+}
+
+.tr th {
+
+  font-size: 20px;
+
+}
+
+a { 
+
+  color:  #38569a;
+
+}
+
+select {
+
+	color:  #38569a;
+  font-family: Lobster;
+  font-size: 15px;
+  text-shadow: -1px -1px 1px #fff, 1px 1px 1px #000;
+
+
+  background-color: rgba(255, 255, 255, .3);
+    
+  border:none;
+  box-shadow: 0 0 30px;
+
+}
+
+.pulse1 ,.pulse2, .chip_left, .chip_right, .swamp, .Photo, .copybook, .cv,.hardcover_back,.book_spine,.hardcover_front,.li,.dropdowns { 
+
+	display: none;
+
+}
+
+
+
+
+
+

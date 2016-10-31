@@ -1,0 +1,99 @@
+*{
+	margin: 0;
+	padding: 0;
+	
+	/*box-shadow: 0 0 0 1px red inset;*/
+}
+
+table {
+	
+	counter-reset: section;
+	
+}
+
+tbody:nth-of-type(1) th:nth-of-type(1) {
+
+	text-align: right;
+
+	padding-right: 10px;
+	padding-left: 10px;
+
+}
+
+tbody:nth-of-type(2) {
+
+	text-align: center;
+
+}
+
+tbody:nth-of-type(2) th {
+
+	text-align: center;
+}
+
+th {
+
+	text-align: right;
+
+}
+
+q {
+
+	quotes: "(" ")";
+
+}
+
+li {
+
+list-style-type: none;
+
+}
+
+.Screen {
+
+	position: fixed;
+    left: 25px;
+    z-index: 100;
+
+}
+
+.Bracket {
+
+	quotes: "<" ">";
+
+}
+
+.Ampersand {
+
+	quotes: "&" "&";
+
+}
+
+.Apostrophe {
+
+	quotes: "'" "'";
+
+}
+
+.Square  {
+
+	quotes: "[" "]";
+
+}
+
+a { 
+
+   text-decoration: none;
+
+}
+
+.photo {
+
+	width: 105px;
+    height: 80px;
+
+    -webkit-filter:contrast(130%);
+	filter: contrast(130%);
+
+}
+

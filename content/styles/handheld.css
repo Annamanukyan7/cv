@@ -1,0 +1,359 @@
+@font-face {
+
+	font-family: Adan Warren pro;
+	src: url(../fonts/adamwarrenpro.ttf);
+
+}
+
+@font-face {
+
+	font-family: Permanent Marker ;
+	src: url(../fonts/PermanentMarker.ttf);
+
+}
+
+body {
+
+	background-color:  #00004d;
+}
+
+main {
+
+	width: 100%;
+	height: 100%;
+
+	position: absolute;
+
+	text-align: center;
+	
+}
+
+main:before {
+
+	height: 100%;
+
+	content: " ";
+	vertical-align: middle;
+
+	display: inline-block;
+	
+}
+
+.centered {
+
+	position: relative;
+
+	vertical-align: middle;
+
+	display: inline-block;
+	
+}
+
+.ggg {
+
+	font-family: Permanent Marker;
+
+    background-color: #b3ffff;
+    
+    padding: 12px 189px 20px 25px;
+    border-radius: 15px 60px 30px;
+    box-shadow: 10px 15px 25px rgba(117, 163, 163, .7);
+    margin-bottom: 26px;
+
+}
+
+table {
+
+	text-align: left;
+
+	background-color: rgba(26, 51, 101, .7);
+
+	border-radius: 15px 50px;
+	padding: 40px 50px 40px 50px;
+
+
+}
+
+th,td, caption, select, input {
+
+	opacity: 0;
+
+	animation-name: koo;
+	-webkit-animation-name: koo;
+
+	animation-delay: 2s;
+	-webkit-animation-delay:2s;
+
+	animation-duration:1s;
+	-webkit-animation-duration:1s;
+
+	animation-fill-mode: forwards;
+	-webkit-animation-fill-mode:forwards; 
+
+}
+
+@keyframes koo {
+
+	0% {
+		opacity: 0;
+	}
+	10% {
+		opacity: .2
+	}
+	20% {
+		opacity: .3;
+	}
+	30% {
+		opacity: .4;
+	}
+	50% {
+		opacity: .5;
+	}
+	65% {
+		opacity: .7;
+	}
+	80% {
+		opacity: .8;
+	}
+	90% {
+		opacity: .9;
+	}
+	100% {
+		opacity: 1;
+	}
+
+}
+
+caption {
+	font-family: Adan Warren pro;
+	font-size: 66px;
+	color: #009900;
+	
+	text-shadow: 0 0 25px rgba(88, 231, 255, 0.71), 0 0 25px rgba(88, 231, 255, 0.71), 0 0 35px rgba(51, 17, 0, 0.71);
+
+}
+
+th  {
+
+	color: #009900;
+
+	text-shadow: 0 0 10px rgba(51, 17, 0, 0.3), 0 0 10px rgba(51, 17, 0, 0.3), 0 0 20px rgba(51, 17, 0, 0.3);
+
+}
+
+td {
+
+	color: #00cc00;
+
+}
+
+.tr th {
+
+    font-size: 20px;
+
+}
+
+select {
+
+	font-family: Permanent Marker ;
+	color: #00cc00;
+
+	background-color: rgba(255,255,255, .1);
+
+	border: none;
+
+}
+
+a {
+
+	color: #00cc00;
+
+}
+
+.swamp {
+
+	width: 196px;
+	height: 190px;
+
+	position: absolute;
+	top: 170px;
+	right: -1px;
+
+	animation:stamp 1.5s ease ;
+	
+}
+
+.head {
+
+    width: 134px;
+    height: 134px;
+    
+    position: relative;
+    right: 115px;
+    top: 199px;
+
+    background-color: #11a4ea;
+    display: table;
+
+    border-radius: 50%;
+
+    transform: translate(-37%, 7%);
+   
+}
+
+.face {
+
+	width: 64px;
+
+    position: absolute;
+    top: 31%;
+    left: 32%;
+
+    animation: rotateFace 3s linear infinite;
+
+}
+
+.eyes {
+
+	width: 92%;
+
+	display: flex;
+
+	justify-content: space-between;
+
+}
+
+.eye {
+
+	width: 16px;
+    height: 19px;
+
+    position: relative;
+
+    background-color: #333;
+    overflow: hidden;
+
+    border-radius: 50%;
+
+    transform-origin: center;
+   
+    
+    animation: blink 3s ease infinite;
+		&:before {
+		
+		height: 50%;
+		width: 100%;
+
+		position: absolute;
+		top: -50%;
+		z-index: 999;	
+
+		content: '';
+
+		background-color: #1185EA;
+	 
+		animation: blinkDown 3s infinite;
+
+	}
+
+	&:after {
+
+		
+		height: 50%;
+		width: 50%;
+		position: absolute;
+		bottom: -50%;
+		z-index: 999;
+
+		content: '';
+
+		background-color: #1185EA;
+	  
+		animation: blinkUp 3s infinite;
+
+	}
+}
+
+.mouth {
+
+	width: 50px;
+	height: 10px;
+
+	background-color: transparent;
+
+	border: 6px solid #333;
+	border-top: 0;
+	border-radius: 0 0 90px 90px / 0 0 70px 70px;
+	margin-top: 15px;
+
+}
+
+@keyframes stamp {
+
+    from {transform: scale(10); opacity: 0;}
+    to {transform: scale(1); opacity: 1;}
+
+}
+
+@keyframes rotateFace{
+	
+    25% {
+    	transform: rotate(10deg) translate(20px, 5px);
+	}
+	50% {
+    	transform: rotate(0) translate(0, 0);
+	}
+	75% {
+    	transform: rotate(-20deg) translate(-30px, -10px);
+	}
+	100% {
+    transform: rotate(0) translate(0, 0);
+	}
+	
+}
+
+@keyframes blinkDown {
+
+	0% {
+		top: -50%;
+	}
+	45% {
+		top: -50%;
+	}
+	50% {
+		top: 0%;
+	}
+	55% {
+		top: -50%;
+	}
+	100% {
+		top: -50%;
+	}
+
+}
+
+@keyframes blinkUp {
+
+	0% {
+		bottom: -50%;
+	}
+	45% {
+		bottom: -50%;
+	}
+	50% {
+		bottom: 0%;
+	}
+	55% {
+		bottom: -50%;
+	}
+	100% {
+		bottom: -50%;
+	}
+
+}
+
+.pulse1 , .pulse2, #box, .amimate , .hanger_left, .hanger_right,.Photo, .copybook, .cv,.hardcover_back,.book_spine,.hardcover_front,.li,.dropdowns {
+
+	display: none;
+
+}

@@ -1,0 +1,205 @@
+@font-face {
+
+	font-family: Black Ops One; 
+	src: url(../fonts/BlackOpsOne-Regular.ttf);
+
+}
+
+body {
+
+background-color: #800000;
+
+}
+
+main {
+
+	width: 100%;
+	height: 100%;
+
+	position: absolute;
+
+	text-align: center;
+	
+}
+
+main:before {
+
+	height: 100%;
+
+	content: " ";
+	vertical-align: middle;
+
+	display: inline-block;
+	
+}
+
+.centered {
+
+	position: relative;
+
+    vertical-align: middle;
+
+	display: inline-block;
+	background-color: #d6d6c2;
+	
+	
+	margin: auto;
+	border-radius: 160px;
+
+}
+
+.ggg {
+
+	font-family: Black Ops One;
+	font-size: 14px;
+
+    padding: 0px 148px 200px 63px;
+
+}
+
+caption {
+
+	font-size: 70px;
+	color: #434323;
+
+	padding-left: 25px;
+
+}
+
+table {
+
+	text-align: left;
+
+	padding: 7px;
+	border: 4px solid #434323;
+    border-top-left-radius: 2em;
+    border-top-right-radius: 2em;
+    box-shadow: 9px 12px 15px rgb(67, 67, 35);
+    
+}
+
+.Resume {
+
+	width: 287px;
+    height: 135px;
+
+    position: absolute;
+    bottom: 387px;
+    left: -163px;
+
+    content: "";
+
+	background: url(../imgs/resume_85107.png);
+    background-size: cover;
+  
+    transform: rotateZ(-65deg);
+
+}
+
+tbody:nth-of-type(2) {
+
+	position: absolute;
+    bottom: 50px;
+
+    padding: 7px 12px 7px 9px;
+    border: 4px solid #434323;
+    border-bottom-left-radius: 2em;
+    border-bottom-right-radius: 2em;
+    box-shadow: 9px 12px 15px rgb(67, 67, 35);
+    margin-right: 121px;
+ 	margin-left: 138px;
+
+    transition: 1.5s;
+   
+}
+
+tbody:nth-of-type(2):hover {
+
+	transition: 1.5s;
+	transform: translateX(50px) translateY(25px);
+
+}
+
+th {
+	color: #f2f2f2;
+
+	background-color: #434323;
+	
+	padding-left: 8px;
+	padding-right: 8px;
+
+}
+
+th:hover {
+
+	color: #434323;
+
+	background-color: #f2f2f2;
+
+	transition: .7s ease;
+
+}
+
+td {
+
+	color: #434323;
+
+}
+
+th, td {
+
+	border: 2px solid #434323;
+	border-radius: 15px;
+	
+}
+
+.tr th {
+
+    font-size: 17px;
+
+}
+
+.photo {
+
+	padding-left: 32px;
+
+}
+
+tbody:nth-of-type(1) ,td:nth-of-type(1) {
+
+	padding-left: 61px;
+
+}
+
+a {
+	color: #434323;
+
+	padding-left: 10px;
+	padding-right: 10px;
+	
+}
+
+select {
+
+	font-family: Black Ops One;
+	font-size: 14px;
+	color: #434323;
+
+	background-color: transparent;
+
+	border:none;
+	
+}
+
+tbody:nth-of-type(2) th, tbody:nth-of-type(2) td {
+
+	width: 1000px;
+	height: 26px;
+	
+}
+
+.pulse1, .pulse2, #box, .amimate, .hanger_left, .hanger_right, .swamp, .Photo, .copybook, .cv,.hardcover_back,.book_spine,.hardcover_front,.li,.dropdowns{
+
+	display: none;
+
+}

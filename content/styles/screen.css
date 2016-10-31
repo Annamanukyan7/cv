@@ -1,0 +1,140 @@
+@font-face {
+
+	font-family: Ravi Prakash;
+	src: url(../fonts/RaviPrakash-Regular.ttf);
+
+}
+
+body {
+
+    background-color: #ffe6b3;
+
+}
+
+main {
+
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+
+	text-align: center;
+	
+}
+
+main:before {
+
+    height: 100%;
+
+    content: " ";
+    vertical-align: middle;
+
+	display: inline-block;
+	
+}
+
+.centered {
+
+	position: relative;
+
+	vertical-align: middle;
+
+	display: inline-block;
+
+}
+
+.ggg {
+
+    font-family: Ravi Prakash;
+    color: #662200;
+
+	background: url(../imgs/569.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    padding: 73px 142px 8px 100px; 
+    border-radius: 30px;
+    margin-bottom: 8px;
+   
+}
+
+table {
+    	
+    text-align: left;
+
+    background-color: #ffffb3;
+
+    padding: 8px;
+    border: 8px solid #ffcc66;
+    border-radius: 10px;
+    box-shadow: 1px 6px 25px 6px #9a5500 inset;
+
+}
+
+table:before {
+
+    position: absolute;
+    left: -111px;
+    top: 219px;
+
+    content: url(../imgs/633.png);
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: inline-block;
+    
+    transition:transform 3s;
+    transform: rotateZ(-30deg);
+  
+}
+
+table:hover::before {
+
+    transition:transform 3s;
+    transform:rotateZ(-60deg) translateY(50px) translateX(25px) scale(1.1);
+
+}
+
+/*table:after {
+
+    position: absolute;
+    right: -234px;
+    top: 174px;
+    z-index: -1;
+
+	content: url(../imgs/Ribbon.png);
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: inline-block;
+    
+    transform: rotateZ(36deg);
+
+}*/
+
+caption {
+
+    font-size: 50px;
+    color: #4d1a00;
+
+}
+    
+a {
+
+    color: #662200;
+}
+
+select {
+    
+	font-family: Ravi Prakash;
+	color: #662200;border-color: #662200;
+
+}
+
+.pulse1, .pulse2, #box, .amimate, .hanger_left, .hanger_right, .swamp, .Photo, .copybook, .cv,.hardcover_back,.book_spine,.hardcover_front,.li,.dropdowns {
+
+    display: none;
+
+}
+
+

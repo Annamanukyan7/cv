@@ -1,0 +1,319 @@
+@font-face {
+
+	font-family: Ceviche One;
+	src: url(../fonts/CevicheOne-Regular.ttf);
+
+}
+
+@font-face {
+
+	font-family: Kaushan Script ;
+	src: url(../fonts/KaushanScript-Regular.ttf);
+
+}
+
+body {
+
+	background-image: url(../imgs/Green-tree-wallpaper-free.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+
+}
+
+main {
+
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+
+    text-align: center;
+
+}
+
+main:before {
+
+    height:100%;
+
+    content: " ";
+    vertical-align: middle;
+
+    display: inline-block;
+   
+}
+ 
+.centered {
+
+    position: relative;
+
+    vertical-align: middle;
+
+    display: inline-block;
+   
+    animation: moves 2s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+
+}
+
+.ggg { 
+
+	font-family: Kaushan Script;
+    font-size: 13px;
+
+    background-color: rgba(46, 86, 49, .8);
+
+    border: 10px solid #331a00;
+    border-radius: 20px;
+    margin-left: 179px;
+    margin-right: 155px;
+
+}
+
+.lol {
+
+    height: 35px;
+    width: 1078px;
+
+    animation: moves 2s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+
+}
+
+table {
+
+    text-align: left;
+
+	padding-left: 70px;
+    padding-right: 73px;
+    padding-bottom: 10px;
+   
+}
+
+caption {
+
+	color:   #ffff4d;
+	font-family: Ceviche One;
+	font-size: 45px;
+	
+}
+
+th {
+
+	color:   #ffff33;
+
+}
+
+td {
+
+    color: #ffff66;
+
+}
+
+.tr th {
+
+    font-size: 16px;
+
+}
+
+select {
+
+    color:   #ffff66;
+	font-family: Kaushan Script ;
+	
+	background-color: rgba(46, 86, 49, .4);
+	
+	border: none;
+
+}
+
+a {
+
+	color:   #ffff66;
+
+}
+
+fieldset {
+
+    border: 1px solid #ffff66;
+    border-radius: 5px;
+}
+
+label {
+
+    display: table;
+
+}
+
+section {
+
+    display: table-cell;
+    user-select:none;
+
+}
+
+tbody:nth-of-type(1) section:nth-of-type(3) input {
+   
+    width: 90px;
+    height: 15px;
+
+    display: table;
+    background-color: rgba(46, 86, 49, .8);
+    
+    border-radius: 5px;
+    border:1px solid #ffff66;
+    
+}
+
+tbody:nth-of-type(1) select {
+
+    display: table;
+
+}
+
+option {
+
+    display: table;
+
+}
+
+#OOPLang {
+
+    width: 112px;
+
+    display: table-cell;
+
+}
+
+#FunctionalScripts {
+
+    width: 112px;
+
+    display: table-cell;
+
+}
+
+tbody:nth-of-type(1) section:nth-of-type(4) .first_checkbox_lbl {
+
+    width: 70px;
+
+    display: table-cell;
+
+}
+
+.first_checkbox {
+
+    display: table;
+
+}
+
+tbody:nth-of-type(1) section:nth-of-type(5) .first_radio {
+
+    width: 115px;
+
+    display: table;
+    
+}
+
+.first_radio_lbl {
+
+    display: table-cell;
+
+}
+
+tbody:nth-of-type(1) select {
+
+    width: 95px;
+
+}
+
+@keyframes moves {
+
+    from {top: -600px;}
+    to {top: 20px;}
+
+}
+
+.hanger_right {
+
+    height: 92px;
+    width: 100px;
+
+    position: absolute;
+    z-index: 3;
+    top: -57px;
+    right: 222px;
+
+    content: " ";
+
+    background: url(../imgs/5211.png);
+    background-size: cover;
+}
+
+.hanger_left {
+
+	height: 92px;
+    width: 100px;
+
+    position: absolute;
+    z-index: 3;
+    top: -57px;
+    left: 240px;
+
+    content: " ";
+
+    background: url(../imgs/5211.png);
+    background-size: cover;
+
+}
+
+.hanger_left::after {
+
+    height: 130vh;
+    width: 75px;
+
+    position: absolute;
+    z-index: -3;
+    left: 24px;
+    bottom: 46px;
+
+    content: "";
+
+    background: url(../imgs/5210.png);
+    background-repeat: repeat;
+    display: inline-block;
+
+   -moz-transform: rotate(180deg);
+    transform: rotate(180deg);
+
+}
+
+.hanger_right::after {
+
+    height: 130vh;
+    width: 75px;
+
+    position: absolute;
+    z-index: -3;
+    right: 0px;
+    bottom: 46px;
+    content: "";
+
+    background: url(../imgs/5210.png);
+    background-repeat: repeat;
+    display: inline-block;
+
+   -moz-transform: rotate(180deg);
+    transform: rotate(180deg);
+    
+}
+
+.pulse1 , .pulse2, #box, .amimate, .swamp, .Photo, .copybook, .cv,.hardcover_back,.book_spine,.hardcover_front, .li,.MLPowers , .ProgrammingSkills, .highlighter , .powers {
+
+    display: none;
+
+}
+
